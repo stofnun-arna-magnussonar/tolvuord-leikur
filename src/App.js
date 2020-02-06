@@ -92,7 +92,7 @@ function App() {
 					<div className={'message-wrapper'+(lastAttempt ? (lastAttempt == 'rétt' ? ' correct' : ' incorrect') : '')}>
 						{
 							lastAttempt &&
-							<div className="heading">{lastAttempt == 'rétt' ? 'Rétt' : 'Vitlaust'}</div>
+							<div className="heading">{lastAttempt == 'rétt' ? 'Rétt' : 'Rangt'}</div>
 						}
 						<div className={'message'} dangerouslySetInnerHTML={{__html: message}} />
 					</div>
