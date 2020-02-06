@@ -1,0 +1,602 @@
+[
+  [
+    {
+      "word": "access control field",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangsstýringarsvið",
+      "lang": "IS",
+      "definition": "Bitamynstur sem greinir <ref idTerm=890387>ramma</ref> frá <ref Bitamynstur sem greinir <ref idTerm=892159>tóka</ref>, sýnir hvaða <ref Bitamynstur sem greinir <ref idTerm=888159>gagnastöðvar</ref> megi nota tókann, segir til um hvenær eigi að <ref Bitamynstur sem greinir <ref idTerm=893215>þurrka út</ref> rammann og heimilar stöðvunum að biðja um næsta tóka."
+    }
+  ],
+  [
+    {
+      "word": "access type",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangstegund",
+      "lang": "IS",
+      "definition": "Tegund <ref idTerm=886564>aðgerðar</ref>, tiltekin með <ref Tegund <ref idTerm=886541>aðgangsrétti</ref>."
+    }
+  ],
+  [
+    {
+      "word": "access technology",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangstækni",
+      "lang": "IS",
+      "definition": ""
+    }
+  ],
+  [
+    {
+      "word": "bastion host",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangstölva",
+      "lang": "IS",
+      "definition": "Eina <ref idTerm=888796>hýsitölva</ref> fyrirtækis sem almennur <ref Eina <ref idTerm=886558>aðgangur</ref> er að á <ref Eina <ref idTerm=889536>lýðnetinu</ref>."
+    }
+  ],
+  [
+    {
+      "word": "access provider",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangsveita",
+      "lang": "IS",
+      "definition": "Stofnun eða fyrirtæki sem veitir notanda <ref idTerm=886558>aðgang</ref> að <ref Stofnun eða fyrirtæki sem veitir notanda <ref idTerm=889927>neti</ref>."
+    }
+  ],
+  [
+    {
+      "word": "IAP",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangsveita fyrir lýðnetið",
+      "lang": "IS",
+      "definition": "<ref idTerm=886555>Aðgangsveita</ref> sem veitir notanda <ref idTerm=886558>aðgang</ref> að <ref idTerm=889536>lýðnetinu</ref>."
+    }
+  ],
+  [
+    {
+      "word": "directory system agent",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangsveitir",
+      "lang": "IS",
+      "definition": "Búnaður sem er hluti af <ref idTerm=891238>skráakerfi</ref> og veitir <ref Búnaður sem er hluti af <ref idTerm=886558>aðgang</ref> að þeim <ref Búnaður sem er hluti af <ref idTerm=892504>upplýsingum</ref> sem eru í <ref Búnaður sem er hluti af <ref idTerm=892507>upplýsingasafni skráakerfis</ref>, hugsanlega í samvinnu við annan búnað af sama tagi."
+    }
+  ],
+  [
+    {
+      "word": "access",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangur",
+      "lang": "IS",
+      "definition": "Geta og ráð sem eru nauðsynleg til þess að nota <ref idTerm=888438>gögn</ref> eða <ref Geta og ráð sem eru nauðsynleg til þess að nota <ref idTerm=892083>tilföng</ref> <ref Geta og ráð sem eru nauðsynleg til þess að nota <ref idTerm=888170>gagnavinnslukerfis</ref>."
+    }
+  ],
+  [
+    {
+      "word": "access",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangur",
+      "lang": "IS",
+      "definition": "Það hvort <ref idTerm=887327>eigindir</ref> og <ref Það hvort <ref idTerm=886519>aðferðir</ref> <ref Það hvort <ref idTerm=889099>klasa</ref> eru tiltækar fyrir þá sem nota klasann."
+    }
+  ],
+  [
+    {
+      "word": "remote database access",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangur að fjartengdu gagnasafni",
+      "lang": "IS",
+      "definition": "<ref idTerm=893136>Þjónusta</ref> sem gerir notkunarferli notanda kleift að hafa <ref idTerm=886558>aðgang</ref> að <ref idTerm=887624>fjartengdu</ref> <ref idTerm=888126>gagnasafni</ref>."
+    }
+  ],
+  [
+    {
+      "word": "failure access",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgangur vegna bilunar",
+      "lang": "IS",
+      "definition": "Heimildarlaus <ref idTerm=886558>aðgangur</ref> að <ref Heimildarlaus <ref idTerm=888438>gögnum</ref> í <ref Heimildarlaus <ref idTerm=888170>gagnavinnslukerfi</ref>, venjulega án ásetnings og afleiðing af <ref Heimildarlaus <ref idTerm=886947>bilun</ref> í <ref Heimildarlaus <ref idTerm=892794>vélbúnaði</ref> eða <ref Heimildarlaus <ref idTerm=888755>hugbúnaði</ref>."
+    }
+  ],
+  [
+    {
+      "word": "user-friendly",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgengilegur",
+      "lang": "IS",
+      "definition": "Auðveldur og þægilegur í notkun fyrir fólk."
+    }
+  ],
+  [
+    {
+      "word": "accessibility",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgengileiki",
+      "lang": "IS",
+      "definition": ""
+    }
+  ],
+  [
+    {
+      "word": "operation",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerð",
+      "lang": "IS",
+      "definition": "Það að leiða nýja stærð af leyfilegri samsetningu þekktra stærða eftir skilgreindri reglu."
+    }
+  ],
+  [
+    {
+      "word": "action",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerð",
+      "lang": "IS",
+      "definition": "Það sem <ref idTerm=888259>gerandi</ref> aðhefst í <ref Það sem <ref idTerm=887896>framsetningu þekkingar</ref> sem styðst við <ref Það sem <ref idTerm=886724>atburðarit</ref>."
+    }
+  ],
+  [
+    {
+      "word": "operation",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerð",
+      "lang": "IS",
+      "definition": "<ref idTerm=887518>Fall</ref> eða umbreyting sem beitt er á <ref idTerm=888657>hluti</ref> í <ref idTerm=889099>klasa</ref> eða sem hlutirnir beita."
+    }
+  ],
+  [
+    {
+      "word": "function",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerð",
+      "lang": "IS",
+      "definition": ""
+    }
+  ],
+  [
+    {
+      "word": "class operation",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerð á klasa",
+      "lang": "IS",
+      "definition": "Aðgerð, gerð á <ref idTerm=889099>klasa</ref> en ekki á einstökum <ref Aðgerð, gerð á <ref idTerm=892102>tilvikum</ref> hans."
+    }
+  ],
+  [
+    {
+      "word": "activity content",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðabú",
+      "lang": "IS",
+      "definition": "Öll starfsemi og <ref idTerm=887587>ferli</ref> sem lúta að <ref Öll starfsemi og <ref idTerm=888169>gagnavinnslu</ref>, ásamt tengslum þeirra innbyrðis."
+    }
+  ],
+  [
+    {
+      "word": "operation code",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðakóti",
+      "lang": "IS",
+      "definition": "Kótuð framsetning á <ref idTerm=886572>aðgerðarhluta</ref> <ref Kótuð framsetning á <ref idTerm=892788>vélarmálsskipunar</ref>."
+    }
+  ],
+  [
+    {
+      "word": "operation exception",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarfrábrigði",
+      "lang": "IS",
+      "definition": "<ref idTerm=887911>Frábrigði</ref> sem verður þegar ógildur <ref idTerm=886572>aðgerðarhluti</ref> kemur fram í <ref idTerm=887795>forriti</ref>."
+    }
+  ],
+  [
+    {
+      "word": "operation field",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarhluti",
+      "lang": "IS",
+      "definition": "Sá hluti <ref idTerm=892788>vélarmálsskipunar</ref> sem tiltekur þá <ref Sá hluti <ref idTerm=886564>aðgerð</ref> sem framkvæma skal."
+    }
+  ],
+  [
+    {
+      "word": "function key",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarhnappur",
+      "lang": "IS",
+      "definition": "<ref idTerm=888668>Hnappur</ref> sem sendir tiltekinn <ref idTerm=891750>stýristaf</ref> eða <ref idTerm=889246>lausnarrunu</ref> sem hvert <ref idTerm=887795>forrit</ref> túlkar á sinn hátt."
+    }
+  ],
+  [
+    {
+      "word": "operation code trap",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarhremma",
+      "lang": "IS",
+      "definition": "Tiltekin breyting á <ref idTerm=886572>aðgerðarhluta</ref> <ref Tiltekin breyting á <ref idTerm=892788>vélarmálsskipunar</ref> sem veldur <ref Tiltekin breyting á <ref idTerm=890535>rofi</ref> þegar vélarmálsskipunin er <ref Tiltekin breyting á <ref idTerm=888843>innt</ref>."
+    }
+  ],
+  [
+    {
+      "word": "operationalization",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarhæfing",
+      "lang": "IS",
+      "definition": "Það að taka saman <ref idTerm=893105>þekkingu</ref> með því að breyta úr formi, sem leiðbeinir, í form sem gefur fyrirmæli um hvernig á að vinna verk."
+    }
+  ],
+  [
+    {
+      "word": "function call",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarkall",
+      "lang": "IS",
+      "definition": ""
+    }
+  ],
+  [
+    {
+      "word": "operational semantics",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðarleg merkingarfræði",
+      "lang": "IS",
+      "definition": "<ref idTerm=889664>Merkingarfræði</ref> þar sem merkingu er lýst með því að lýsa <ref idTerm=886564>aðgerðum</ref>."
+    }
+  ],
+  [
+    {
+      "word": "operation table",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðartafla",
+      "lang": "IS",
+      "definition": "<ref idTerm=891914>Tafla</ref> sem skilgreinir <ref idTerm=886564>aðgerð</ref> með því að sýna <ref idTerm=889376>lista</ref> yfir allar hugsanlegar samantektir af gildum <ref idTerm=893173>þolendanna</ref> og samsvarandi <ref idTerm=892560>útkomur</ref> úr aðgerðinni fyrir hverja samantekt."
+    }
+  ],
+  [
+    {
+      "word": "function keyboard",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgerðaskiki",
+      "lang": "IS",
+      "definition": "<ref idTerm=891112>Skiki</ref> með <ref idTerm=886573>aðgerðarhnöppum</ref> á <ref idTerm=888945>ílagstæki</ref> sem tengt er <ref idTerm=886966>birti</ref>."
+    }
+  ],
+  [
+    {
+      "word": "downlink",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgrein",
+      "lang": "IS",
+      "definition": "Fjarskiptatenging frá fjarskiptatungli til jarðstöðvar."
+    }
+  ],
+  [
+    {
+      "word": "discrimination",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgreiningargeta",
+      "lang": "IS",
+      "definition": "Geta <ref idTerm=891049>sjónkerfis</ref> til þess að greina mun á einkennum <ref Geta <ref idTerm=888658>hlutar</ref>, t.d. á <ref Geta <ref idTerm=889387>litgildum</ref> eða staðsetningu."
+    }
+  ],
+  [
+    {
+      "word": "discriminant",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgreinir",
+      "lang": "IS",
+      "definition": "<ref idTerm=889616>Máleining</ref> sem líkist <ref idTerm=891630>stika</ref> og sýnir hvaða <ref idTerm=888149>gagnaskipan</ref> skuli nota í tiltekinni <ref idTerm=888051>færslu</ref>."
+    }
+  ],
+  [
+    {
+      "word": "ticket",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðgöngumerki",
+      "lang": "IS",
+      "definition": "Merki um tiltekinn <ref idTerm=886541>aðgangsrétt</ref> handhafa að <ref Merki um tiltekinn <ref idTerm=892818>viðfangsefni</ref>."
+    }
+  ],
+  [
+    {
+      "word": "access path",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðkomuleið",
+      "lang": "IS",
+      "definition": "<ref idTerm=890557>Runa</ref> <ref idTerm=892943>vistfanga</ref> sem vísa á þau <ref idTerm=888438>gögn</ref> sem sóst er eftir."
+    }
+  ],
+  [
+    {
+      "word": "downlink",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðleiðar-",
+      "lang": "IS",
+      "definition": "Sem fer frá <ref idTerm=889977>netstjóra</ref> til <ref Sem fer frá <ref idTerm=888159>gagnastöðvar</ref>."
+    }
+  ],
+  [
+    {
+      "word": "induction",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðleiðsla",
+      "lang": "IS",
+      "definition": "<ref idTerm=886788>Ályktun</ref> sem hefst með tilteknum <ref idTerm=891496>staðreyndum</ref> og lýkur með almennum tilgátum."
+    }
+  ],
+  [
+    {
+      "word": "inductive learning",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðleiðslunám",
+      "lang": "IS",
+      "definition": "<ref idTerm=889907>Námsaðferð</ref> sem felst í <ref idTerm=886586>aðleiðslu</ref> út frá veittri <ref idTerm=893105>þekkingu</ref>, dæmum eða athugunum."
+    }
+  ],
+  [
+    {
+      "word": "speaker adaptation",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðlögun að mælanda",
+      "lang": "IS",
+      "definition": "Aðferð við <ref idTerm=891945>talkennsl</ref> þar sem kerfi er leyft að breyta orðalíkönum sjálfvirkt á grundvelli viðbótartalsýna mælanda."
+    }
+  ],
+  [
+    {
+      "word": "adaptive refinement",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðlögunarfágun",
+      "lang": "IS",
+      "definition": "Það að hagnýta minnkaða víxlverkun milli notanda og kerfis til þess að draga fram fleiri smáatriði í nánasta umhverfi."
+    }
+  ],
+  [
+    {
+      "word": "adaptive neural network",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðlögunarhæft tauganet",
+      "lang": "IS",
+      "definition": "<ref idTerm=891980>Tauganet</ref> sem er fært um að stilla starfshætti sína í samræmi við breytingar í umhverfi þess."
+    }
+  ],
+  [
+    {
+      "word": "adaptive learning",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðlögunarnám",
+      "lang": "IS",
+      "definition": "<ref idTerm=889907>Námsaðferð</ref> sem felst í því að aðlaga eigin <ref idTerm=893105>þekkingu</ref> eftir ráðleggingu frá <ref idTerm=893107>þekkingargjafa</ref> eða breyta nýlega fengnum <ref idTerm=892504>upplýsingum</ref> í samræmi við þekkingu sem fyrir er."
+    }
+  ],
+  [
+    {
+      "word": "adaptive training",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðlögunartalþjálfun",
+      "lang": "IS",
+      "definition": "<ref idTerm=891971>Talþjálfun</ref> sem getur breytt og endurnýjað <ref idTerm=891949>talmát</ref> til þess að greina hvort <ref idTerm=891945>talkennsl</ref> versna og loks til þess að bæta þau."
+    }
+  ],
+  [
+    {
+      "word": "access ramp",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "aðrein",
+      "lang": "IS",
+      "definition": "Aðgangsrás sem notandi getur tengst <ref idTerm=889536>lýðnetinu</ref> um."
+    }
+  ],
+  [
+    {
+      "word": "descramble",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afbrengla",
+      "lang": "IS",
+      "definition": "Endurrétta upprunalegt <ref idTerm=891567>stafrænt merki</ref> frá <ref Endurrétta upprunalegt <ref idTerm=887065>brengluðu</ref> stafrænu merki."
+    }
+  ],
+  [
+    {
+      "word": "access point",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afgreiðslustaður",
+      "lang": "IS",
+      "definition": "Staður þar sem tiltekin <ref idTerm=893136>þjónusta</ref> fæst."
+    }
+  ],
+  [
+    {
+      "word": "point-of-sale terminal",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afgreiðslustöð",
+      "lang": "IS",
+      "definition": "Búðarkassi þar sem skráðar eru <ref idTerm=892504>upplýsingar</ref> um seldar vörur, annaðhvort á <ref Búðarkassi þar sem skráðar eru <ref idTerm=891038>sjálfvirkan</ref> hátt, t.d. með <ref Búðarkassi þar sem skráðar eru <ref idTerm=891457>sprota</ref>, eða á handvirkan hátt um <ref Búðarkassi þar sem skráðar eru <ref idTerm=888663>hnappaborð</ref>."
+    }
+  ],
+  [
+    {
+      "word": "turnaround time",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afgreiðslutími",
+      "lang": "IS",
+      "definition": "Sá tími sem líður frá því að <ref idTerm=892742>verk</ref> er afhent til vinnslu þar til útkoma er tilbúin."
+    }
+  ],
+  [
+    {
+      "word": "delivery",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afhending",
+      "lang": "IS",
+      "definition": "<ref idTerm=887741>Flutningsskref</ref> sem felst í því að <ref idTerm=891090>skeytaflutningsmiðill</ref> flytur <ref idTerm=891110>skeyti</ref> eða <ref idTerm=891120>skilatilkynningu</ref> til <ref idTerm=891093>skeytageymslu</ref> eða til <ref idTerm=886527>aðgangsbúnaðar</ref> <ref idTerm=888761>hugsanlegs viðtakanda</ref>."
+    }
+  ],
+  [
+    {
+      "word": "capacity",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afkastageta",
+      "lang": "IS",
+      "definition": ""
+    }
+  ],
+  [
+    {
+      "word": "benchmark",
+      "lang": "EN",
+      "definition": ""
+    },
+    {
+      "word": "afkastaprófun",
+      "lang": "IS",
+      "definition": "<ref idTerm=890281>Prófun</ref> þar sem afköst <ref idTerm=892794>vélbúnaðar</ref> og <ref idTerm=888755>hugbúnaðar</ref> í tiltekinni <ref idTerm=890745>samskipan</ref> eru metin með því að nota dæmigerð <ref idTerm=887795>forrit</ref> og <ref idTerm=888438>gögn</ref>."
+    }
+  ]
+]
