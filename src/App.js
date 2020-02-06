@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import _ from 'underscore';
 import './style.css';
 
+const sessionLength = 10;
+
 function App() {
 	const [question, setQuestion] = useState(null);
 	const [message, setMessage] = useState(null);
@@ -9,6 +11,8 @@ function App() {
 	const [asking, setAsking] = useState(false);
 	const [initialized, setInitialized] = useState(false);
 	const [tolvuord, setTolvurod] = useState(null);
+	const [session, setSession] = useState(0);
+	const [score, setScore] = useState(0);
 
 	useEffect(() => {
 		if (!tolvuord) {
@@ -29,6 +33,7 @@ function App() {
 
 	let createQuestion = () => {
 		setAsking(true);
+		setSession(session+1);
 
 		let questionObj = {
 			rightAnswer: tolvuord[Math.floor(Math.random() * tolvuord.length)],
@@ -42,7 +47,7 @@ function App() {
 		setQuestion(questionObj)
 	};
 
-	if (tolvuord && !asking) {
+	if (tolvuord && !asking && session <= sessionLength+1) {
 		createQuestion();
 	}
 
@@ -57,14 +62,13 @@ function App() {
 
 		if (answer == question.rightAnswer[question.questionLang == 0 ? 1 : 0].word) {
 			setLastAttempt('rétt');
-			setMessage('<em>'+capitalize(question.rightAnswer[question.questionLang].word)+'</em> merkir <em>'+answer+'.</em>'+'<br/><small>Skilgreining: <i>'+isDefinition+'</i></small>');
+			setMessage('<em>'+capitalize(question.rightAnswer[question.questionLang].word)+'</em> merkir <em>'+answer+'.</em>'+(isDefinition && isDefinition.length > 0 ? '<br/><small>Skilgreining: <i>'+isDefinition+'</i></small>' : ''));
+			setScore(score+1);
 		}
 		else {
 			setLastAttempt('vitlaust');
-			setMessage('<em>'+capitalize(question.rightAnswer[question.questionLang].word)+'</em> merkir <em>'+question.rightAnswer[question.questionLang == 0 ? 1 : 0].word+'.</em>'+'<br/><small>Skilgreining: <i>'+isDefinition+'</i></small>');
+			setMessage('<em>'+capitalize(question.rightAnswer[question.questionLang].word)+'</em> merkir <em>'+question.rightAnswer[question.questionLang == 0 ? 1 : 0].word+'.</em>'+(isDefinition && isDefinition.length > 0 ? '<br/><small>Skilgreining: <i>'+isDefinition+'</i></small>' : ''));
 		}
-
-		console.log(message);
 
 		setAsking(false);
 	}
@@ -86,29 +90,42 @@ function App() {
 
 	return (
 		<div className="app">
-			<div className="question-wrapper">
-				{
-					message &&
-					<div className={'message-wrapper'+(lastAttempt ? (lastAttempt == 'rétt' ? ' correct' : ' incorrect') : '')}>
-						{
-							lastAttempt &&
-							<div className="heading">{lastAttempt == 'rétt' ? 'Rétt' : 'Rangt'}</div>
-						}
-						<div className={'message'} dangerouslySetInnerHTML={{__html: message}} />
-					</div>
-				}
-				{
-					question &&
-					<div>
-						<div className="question">Hvað þýðir <em>{question.rightAnswer[question.questionLang].word}</em>?</div>
-						<div className="answers">
-						{
-							answers
-						}
-						</div>
-					</div>
-				}
+
+			<div className="session-wrapper">
+				<span className="current">{session <= sessionLength ? session : sessionLength}</span><span className="slash">/</span><span className="total">{sessionLength}</span>
 			</div>
+
+			{
+				message &&
+				<div className={'message-wrapper'+(lastAttempt ? (lastAttempt == 'rétt' ? ' correct' : ' incorrect') : '')}>
+					{
+						lastAttempt &&
+						<div className="heading">{lastAttempt == 'rétt' ? 'Rétt' : 'Rangt'}</div>
+					}
+					<div className={'message'} dangerouslySetInnerHTML={{__html: message}} />
+				</div>
+			}
+			{
+				question &&
+				<div className="question-wrapper">
+						<div className={'results-wrapper'+(session == sessionLength+1 ? ' visible' : '')}>
+							<div className="heading">Þú náðir {score} réttum af {sessionLength}.</div>
+							<a onClick={() => {
+								setScore(0);
+								setSession(1);
+							}}>Byrja aftur</a>
+						</div>
+
+					<div className="question">Hvað þýðir <em>{question.rightAnswer[question.questionLang].word}</em>?</div>
+
+					<div className="answers">
+					{
+						answers
+					}
+					</div>
+
+				</div>
+			}
 		</div>
 	);
 }
