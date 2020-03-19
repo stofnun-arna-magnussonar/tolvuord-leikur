@@ -1,12 +1,25 @@
+@background-color: #e2e2e2;
+@color-blue: #0088ff;
+@color-orange: #b34300;
+
 body, html {
 	height: 100%;
-	background: #e2e2e2;
+	background: @background-color;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 *, *:after, *:before {
 	transition: all 300ms ease-in-out;
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+body > * {
+	opacity: 0;
+	transition-duration: 0;
+}
+
+body.app-initialized > * {
+	opacity: 1;
 }
 
 #root {
@@ -18,6 +31,64 @@ body, html {
 	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
+}
+
+.intro {
+	display: flex;
+
+	position: absolute;
+
+	top: 150px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background: @background-color;
+
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+
+	z-index: 10;
+
+	.game-started & {
+		opacity: 0;
+
+		pointer-events: none;
+	}
+
+	.content {
+		width: 80%;
+		height: 80%;
+		max-width: 800px;
+
+		p {
+			font-size: 1.2rem;
+
+			a {
+				color: @color-blue;
+
+				&.main-button {
+					display: inline-block;
+				
+					padding: 10px 15px;
+					margin-right: 25px;
+
+					border-radius: 4px;
+					box-shadow: 0 0 0 #00000070;
+
+					background: @color-blue;
+
+					color: white;
+					text-decoration: none;
+
+					&:hover {
+						box-shadow: 0 2px 10px #00000070;
+					}
+				}
+			}
+		}
+	}
 }
 
 .app {
@@ -137,11 +208,11 @@ em {
 .message-wrapper {
 	.heading {
 		.correct& {
-			color: #0088ff;
+			color: @color-blue;
 		}
 
 		.incorrect& {
-			color: #b34300;
+			color: @color-orange;
 		}
 	}
 }
@@ -152,7 +223,7 @@ em {
 	font-size: 35px;
 
 	.current {
-		color: #0088ff;
+		color: @color-blue;
 	}
 
 	.slash {

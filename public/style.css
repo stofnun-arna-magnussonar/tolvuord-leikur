@@ -1,0 +1,197 @@
+body,
+html {
+  height: 100%;
+  background: #e2e2e2;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+*,
+*:after,
+*:before {
+  transition: all 300ms ease-in-out;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+body > * {
+  opacity: 0;
+  transition-duration: 0;
+}
+body.app-initialized > * {
+  opacity: 1;
+}
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.intro {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #e2e2e2;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  z-index: 10;
+}
+.game-started .intro {
+  opacity: 0;
+  pointer-events: none;
+}
+.intro .content {
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+}
+.intro .content p {
+  font-size: 1.2rem;
+}
+.intro .content p a {
+  color: #0088ff;
+}
+.intro .content p a.main-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 25px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 #00000070;
+  background: #0088ff;
+  color: white;
+  text-decoration: none;
+}
+.intro .content p a.main-button:hover {
+  box-shadow: 0 2px 10px #00000070;
+}
+.app {
+  width: 40%;
+}
+.logo img {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 130px;
+}
+.logo .title {
+  position: fixed;
+  top: 45px;
+  left: 45px;
+  font-size: 35px;
+  line-height: 28px;
+  color: #646464;
+}
+.logo .title small {
+  font-size: 20px;
+  font-weight: bold;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #444;
+}
+.question {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.answers a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: inherit;
+  text-decoration: none;
+}
+.answers a:after {
+  display: inline;
+  content: " ?";
+  opacity: 0;
+}
+.answers a:before {
+  display: block;
+  content: " ";
+  position: relative;
+  top: 9px;
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-color: #999;
+  transform: rotate(45deg);
+}
+.answers a:hover:after {
+  opacity: 0.6;
+}
+.answers a:hover:before {
+  border-color: #333;
+}
+.message-wrapper {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #999;
+  font-size: 40px;
+}
+.message-wrapper .heading {
+  font-size: 60px;
+  font-weight: bold;
+}
+.message {
+  font-size: 30px;
+}
+.correct.message-wrapper .heading {
+  color: #0088ff;
+}
+.incorrect.message-wrapper .heading {
+  color: #b34300;
+}
+.session-wrapper {
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+.session-wrapper .current {
+  color: #0088ff;
+}
+.session-wrapper .slash {
+  color: #999;
+}
+.question-wrapper {
+  position: relative;
+}
+.results-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e2e2e2;
+  font-size: 40px;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+.results-wrapper.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.results-wrapper a {
+  display: block;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.results-wrapper a:before {
+  display: block;
+  content: " ";
+  position: relative;
+  top: 9px;
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-color: #999;
+  transform: rotate(45deg);
+}

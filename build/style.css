@@ -10,6 +10,13 @@ html {
   transition: all 300ms ease-in-out;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+body > * {
+  opacity: 0;
+  transition-duration: 0;
+}
+body.app-initialized > * {
+  opacity: 1;
+}
 #root {
   display: flex;
   width: 100%;
@@ -17,6 +24,47 @@ html {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+}
+.intro {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #e2e2e2;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  z-index: 10;
+}
+.game-started .intro {
+  opacity: 0;
+  pointer-events: none;
+}
+.intro .content {
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+}
+.intro .content p {
+  font-size: 1.2rem;
+}
+.intro .content p a {
+  color: #0088ff;
+}
+.intro .content p a.main-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 25px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 #00000070;
+  background: #0088ff;
+  color: white;
+  text-decoration: none;
+}
+.intro .content p a.main-button:hover {
+  box-shadow: 0 2px 10px #00000070;
 }
 .app {
   width: 40%;

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import _ from 'underscore';
-import './style.css';
 
 const sessionLength = 10;
 
@@ -10,6 +9,7 @@ function App() {
 	const [lastAttempt, setLastAttempt] = useState(null);
 	const [asking, setAsking] = useState(false);
 	const [initialized, setInitialized] = useState(false);
+	const [started, setStarted] = useState(false);
 	const [tolvuord, setTolvurod] = useState(null);
 	const [session, setSession] = useState(0);
 	const [score, setScore] = useState(0);
@@ -18,6 +18,12 @@ function App() {
 		if (!tolvuord) {
 			fetch('tolvuord.json').then((res) => res.json()).then((json) => {
 				setTolvurod(json);
+
+				setTimeout(() => {
+					setInitialized(true);
+
+					window.document.body.classList.add('app-initialized');
+				}, 500);
 			})
 		}
 	});
@@ -89,7 +95,21 @@ function App() {
 	]) : [];
 
 	return (
-		<div className="app">
+		<div className={'app'+(initialized ? ' initialized' : '')+(started ? ' game-started' : '')}>
+
+			<div className="intro">
+				<div className="content">
+					<h1>Þekkir þú tölvuorðin?</h1>
+					<p>Tölvuorðasafnið er uppflettisafn orða á íslensku og fleiri tungumálum og inniheldur hugtök sem tengjast tölvum og tölvunarfræði. Orðasafnið var unnið af orðanefnd Skýrslutæknifélags Íslands og er hýst í Íðorðabanka Stofnunar Árna Magnússonar í íslenskum fræðum.</p>
+					<p>Í þessum leik getur þú athugað hvort þú þekkir orðin.</p>
+					<p>
+						<a className="main-button" href="#" onClick={(event) => {
+							event.preventDefault();
+							setStarted(true);
+						}}>Spila leik</a>
+						<a href="https://idordabanki.arnastofnun.is/leit//ordabok/TOLVA">Fara í tölvuorðasafn</a></p>
+				</div>
+			</div>
 
 			<div className="session-wrapper">
 				<span className="current">{session <= sessionLength ? session : sessionLength}</span><span className="slash">/</span><span className="total">{sessionLength}</span>
